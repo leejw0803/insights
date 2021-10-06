@@ -16,6 +16,18 @@ node.js 어플리케이션을 빌드하는데 유용하며, 객체지향 프로�
 controllers -> 기본적인 라우트정보를 담는다.
 providers -> service.ts 구체적인 로직을 가짐 : 기존 프로젝트의 ctrl 느낌
 
-#### Ref
+### Jest
+
+#### mocking
+
+단위 테스트를 작성할 때, 해당 코드가 의존하는 부분을 가짜로 대체하는 기법
+
+jest.fn() : 가짜함수
+mockReturnValue, mockResolvedValue, mockImplementation
+
+jest.spyOn() : 함수의 구현을 가짜로 대체하지 않고, 해당 함수의 호출 여부와 어떻게 호출되었는지만을 알아냄
+
+### Ref
 
 <a href="https://darrengwon.tistory.com/965">dotenv를 nest에서 안쓰는 이유</a>
+<a href="https://www.daleseo.com/jest-fn-spy-on/">tdd mocking </a>
